@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# 🍽️ Food Recipe Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **Food Recipe Search App** is a modern web application that allows users to search for recipes by ingredient or dish name. Built with React and Material UI, it provides a clean, responsive, and user-friendly interface. The app fetches real-time recipe data from the [Edamam Recipe API](https://developer.edamam.com/edamam-recipe-api) and displays results in an elegant card-based layout. To securely handle API requests and avoid CORS issues, the app uses a Node.js/Express backend server as a proxy.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Live Recipe Search:** Instantly search for recipes by entering any ingredient or dish.
+- **Elegant UI:** Responsive design using Material UI for a seamless experience on all devices.
+- **Recipe Cards:** Each recipe is displayed with an image, title, calories, and a preview of ingredients.
+- **View Full Recipe:** Click "View Recipe" to open the full recipe in a new tab.
+- **Ingredient Preview:** Top ingredients are shown as chips, with a "+N more" chip for longer lists.
+- **Backend Proxy:** Node.js/Express server securely communicates with the Edamam API and handles required headers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Frontend:**  
+   - Built with React and Material UI.
+   - Users enter a search term and submit the form.
+   - The app sends a request to the backend server.
 
-### `npm run build`
+2. **Backend:**  
+   - Built with Node.js and Express.
+   - Receives search requests from the frontend.
+   - Forwards the request to the Edamam API, including necessary authentication and headers.
+   - Returns the recipe data to the frontend.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Display:**  
+   - Recipes are shown as cards with images, names, calories, and ingredient chips.
+   - Users can click to view the full recipe on the source website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **Frontend:** React, Material UI, Axios
+- **Backend:** Node.js, Express, Axios
+- **API:** Edamam Recipe API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
